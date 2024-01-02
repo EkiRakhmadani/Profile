@@ -1,0 +1,86 @@
+.project_container {
+  width: 750px;
+}
+
+.project_card {
+  background-color: var(--container-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1.5rem 2rem;
+  border-radius: 0.5rem;
+  margin-bottom: var(--mb-3);
+}
+
+.project_img {
+  margin-bottom: var(--mb-1);
+  border-radius: 0.5rem;
+}
+
+.project_title {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: var(--mb-0-25);
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.project_button {
+  display: flex;
+  gap: 0.25rem;
+  background-color: var(--title-color);
+  color: var(--container-color);
+  font-weight: var(--font-medium);
+  padding: 0.3rem 0.8rem;
+  border-radius: 0.5rem;
+}
+
+.project_button:hover {
+  background-color: var(--title-color-dark);
+}
+
+.project_link {
+  font-size: var(--small-font-size);
+}
+
+.project_openLink {
+  width: 20px;
+  height: 20px;
+}
+
+.project_tech {
+  margin-top: var(--mb-0-5);
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+/* Swiper Class */
+.swiper-pagination-bullet {
+  background-color: var(--text-color) !important;
+}
+
+.swiper-pagination-bullet:active {
+  background-color: var(--title-color) !important;
+}
+
+/* ------------MEDIUM DEVICE------------ */
+@media screen and (max-width: 768px) {
+  .project_container {
+    width: initial;
+  }
+
+  .project_card {
+    padding: 1.25rem 1.5rem;
+  }
+}
+/* ------------MEDIUM DEVICE------------ */
+
+/* -------------SMALL DEVICE------------- */
+@media screen and (max-width: 350px) {
+  .project_link {
+    font-size: var(--smaller-font-size);
+  }
+}
+/* -------------SMALL DEVICE------------- */
